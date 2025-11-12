@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        table, td, th {
+            border: 2px solid blue;
+            border-collapse: collapse;
+        }
+        table {width: 70%;}
+        tfoot {
+            color: red;
+        }
+        tbody {
+            color: blue;
+        }
+        tr {height: 80px;}
+        td {vertical-align: center;
+        text-align: center;}
+        tr:nth-child(odd) {
+            background-color: beige;
+        }
+        tr:nth-child(even) {
+            background-color: aqua;
+        }
+        tr:hover {
+            background-color: lightblue;
+        }
+        table {
+            margin:auto
+        }
+        #primera-fila {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS en tablas</h1>
+    <div id="contenedor-tabla">
+    <table>
+        <colgroup>
+            <col style="width: 300px;">
+            <col style="width: 100px;">
+        </colgroup>
+        <tr id="primera-fila">
+            <th>Artículo</th> 
+            <th>Precio</th>
+        </tr>
+        <tbody>
+        <tr>
+            <td>Aceite de Oliva</td>
+            <td>10€</td>
+        </tr>
+        <tr>
+            <td>Tortas de Alcázar</td>
+            <td>6€</td>
+        </tr>
+        </tbody>
+         <tfoot>
+        <tr>
+            <td>Queso Manchego</td>
+            <td>30€</td>
+        </tr>
+        </tfoot>
+    </div>
+    </table>
+</body>
+</html>
